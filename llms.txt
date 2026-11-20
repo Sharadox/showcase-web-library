@@ -1,0 +1,9 @@
+# @sharadox/showcase-web-library
+
+> Show one site's live components on another site (a portfolio running a client's real components), looking and behaving as at home.
+
+- /guest: <Guest className? style? look children> — the demo frame: data-guest (host global rules and pointer-web-library's Cursor step aside), its links do nothing when clicked (other controls work); GuestContext holds `look` (the classes for the guest's look)
+- /portal: <Portal children> — draws at the end of <body>, browser only (nothing on the server); inside a Guest it wraps in the guest's look (className = look, data-guest, display: contents)
+- /asset-origin: <AssetOrigin origin children>, useAsset(path) → `${origin}${path}`, useAssets() → (path) => … — the guest's own files load from its own address; unchanged outside
+- Peer: react. License: Sharadox Open Source License 0.1.0
+- Changes by version: CHANGELOG.md (in the package)
