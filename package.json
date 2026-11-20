@@ -1,6 +1,6 @@
 {
   "name": "@sharadox/showcase-web-library",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Show one site's live components on another: an inert demo frame, portals that keep the guest's look, and files served from the guest's own address.",
   "private": false,
   "license": "SEE LICENSE IN LICENCA.md",
@@ -28,9 +28,7 @@
     "llms.txt",
     "CHANGELOG.md"
   ],
-  "sideEffects": [
-    "**/*.css"
-  ],
+  "sideEffects": false,
   "engines": {
     "node": ">=26"
   },
